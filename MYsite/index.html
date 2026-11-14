@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>NewOfGames</title>
+</head>
+    <style>
+    body{
+        font-family:Arial, sans-serif;
+        background-color: #213631;
+        color:#d1d1d1;
+        padding: 50px;
+        font-size: 1em;
+        line-height: 1.5;
+    }
+    h1, h2, h3, h4{
+           text-align: left;
+    }
+    p{
+           text-align: center;
+    }
+    h1{
+        color: #d1d1d1;
+    }
+    p{
+        color: #d1d1d1;
+    }
+    li{
+        color:#d1d1d1;
+    }
+    a:hover{
+        color: #3ca06e;
+    }
+    a{
+        color:#032721; text-decoration: none; font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 1.5em;
+    }
+    h4{
+        color:#032721;
+    }
+    </style>
+
+<body>
+<!-- ========================================== -->
+<!-- БУРГЕР-МЕНЮ (для мобильных)                -->
+<!-- ========================================== -->
+<input type="checkbox" id="burger-toggle" class="burger-toggle">
+<label for="burger-toggle" class="burger-label">☰ Меню</label>
+
+
+    <!-- ========================================== -->
+    <!-- НАВИГАЦИЯ С КНОПКОЙ ВОЙТИ                  -->
+    <!-- ========================================== -->
+    <nav class="main-nav">
+        <div>
+        <ul style="background-color: #3e5c55;list-style-type: none ; display:flex;padding: 1%;margin: 2%;gap: 100px;">
+        <li><a href="index.html">|Новости|</a> </li>
+        <li><a href="site2.html">|О нас|</a></li>
+        <li><a href="site3.html">|Анонсы|</a></li>
+        <li><a href="site4.html">|Жестокие игры|</a></li>
+        <li><a href="admin.html">|Административная панель|</a></li>
+        </ul>
+        </div>
+        
+        <!-- Кнопка "Войти" (показывается, если не авторизован) -->
+        <button id="login-btn" class="login-btn">🔐 Войти</button>
+        
+        <!-- Профиль пользователя (показывается, если авторизован) -->
+        <div id="user-menu" class="user-menu" style="display: none;">
+            <span id="user-display-name" class="user-name">Пользователь</span>
+            <button id="logout-btn" class="logout-btn-small">Выйти</button>
+        </div>
+    </nav>
+
+
+
+<!-- ========================================== -->
+<!-- МОДАЛЬНОЕ ОКНО АУТЕНТИФИКАЦИИ              -->
+<!-- ========================================== -->
+    <div class="auth-modal" id="auth-modal">
+        <div class="auth-modal-window">
+            
+            <!-- Кнопка закрытия -->
+            <button class="modal-close" id="modal-close">✕</button>
+            
+            <!-- Заголовок -->
+            <h2 class="auth-title">🔐 Добро пожаловать!</h2>
+            
+            <!-- Вкладки -->
+            <div class="auth-tabs">
+                <button class="auth-tab active" data-tab="login">Вход</button>
+                <button class="auth-tab" data-tab="register">Регистрация</button>
+            </div>
+            
+            <!-- Форма входа -->
+            <form id="login-form" class="auth-form active">
+                <div class="form-group">
+                    <label for="login-email">Email:</label>
+                    <input type="email" id="login-email" placeholder="example@mail.ru" required>
+                </div>
+                <div class="form-group">
+                    <label for="login-password">Пароль:</label>
+                    <input type="password" id="login-password" placeholder="••••••" required>
+                </div>
+                <button type="submit" class="auth-btn">Войти</button>
+            </form>
+            
+            <!-- Форма регистрации -->
+            <form id="register-form" class="auth-form">
+                <div class="form-group">
+                    <label for="register-name">Имя:</label>
+                    <input type="text" id="register-name" placeholder="Ваше имя" required>
+                </div>
+                <div class="form-group">
+                    <label for="register-email">Email:</label>
+                    <input type="email" id="register-email" placeholder="example@mail.ru" required>
+                </div>
+                <div class="form-group">
+                    <label for="register-password">Пароль (мин. 6 символов):</label>
+                    <input type="password" id="register-password" placeholder="••••••" minlength="6" required>
+                </div>
+                <button type="submit" class="auth-btn">Зарегистрироваться</button>
+            </form>
+            
+        </div>
+    </div>
+
+
+    
+    <h1>Привет, это основная страница новостей по играм, длс и просто о компаниях разрабатывающих игры.</h1>
+    <h2>Здесь ты найдёшь новость о почти каждой игре!</h2>
+    <h3>Обязательно к чтению.</h3>
+    <ul>
+        <li>Тут есть присутвие игр с шокирующим и ярким контентом.</li>
+        <li>Мы не продвигаем игры с насилием, а лишь пишем новости.</li>
+        <li>Мы не станем вписывать личную информацию разработчиков.</li>
+        <li>Мы не напишем новость о слишком странных играх.</li>
+        <li>Мы делаем новости о 18+ играх, но не основном сайте, а на дополнительных страницах.</li>
+    </ul>
+
+    </ul>
+        <p>Мы берём информацию c</p>
+        <p><img src="https://app2top.ru/wp-content/uploads/2021/12/steam-sales-reviews.jpg" width="800" height="500"></p>
+        <p><img src="https://img.utdstc.com/screen/ced/007/ced0074f4b16edd84d0d794eb928ad642dce0aa20755dcec85f67f4797763f2f:600" width="800" height="600"></p>
+        <p><img src="https://static.itch.io/images/app/collections@1x.png" width="800" height="500"></p>
+    
+    <ul style="background-color: #3e5c55;list-style-type: none ; display:flexbox;padding: 1%;margin: 2%;gap: 100px;">
+    <li><h4>Нет какой-то игры о которой бы вы бы хотели прочитать?</h4></li>
+    <li><h4>Нашите нам и мы постараемся быстро добавить информацию! </h4></li>
+    <li><a href="site2.html">О нас и поддержка</a></li>
+    </ul>
+
+    <script src="js/script.js"></script>
+
+    <script type="module">
+    import { initializeApp } from 'https://www.gstatic.com/firebasejs/11.6.0/firebase-app.js';
+    import { getFirestore } from 'https://www.gstatic.com/firebasejs/11.6.0/firebase-firestore.js';
+    import { getAuth } from 'https://www.gstatic.com/firebasejs/11.6.0/firebase-auth.js';
+    const firebaseConfig = {
+    apiKey: "AIzaSyD2zGPN9g5LcRhGcA6SHqx1d9PVvoVKKdE",
+    authDomain: "fire-pascal.firebaseapp.com",
+    projectId: "fire-pascal",
+    storageBucket: "fire-pascal.firebasestorage.app",
+    messagingSenderId: "449073559122",
+    appId: "1:449073559122:web:6a003bf378a297e308118b"
+    };
+
+    const app = initializeApp(firebaseConfig);
+    const db = getFirestore(app);
+    const auth = getAuth(app);
+
+    console.log('Firebase подключен!');
+    console.log('Project ID:', firebaseConfig.projectId);
+    console.log('Firestore готов к работе!');
+    console.log('🔐 Auth готов!');
+    window.firebaseConfig = firebaseConfig;
+    window.db = db;
+    window.auth = auth;
+    window.firebaseReady = true;
+    </script>
+    
+</body>
+</html>
